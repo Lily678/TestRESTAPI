@@ -1,4 +1,4 @@
-# Test google mail
+# Test REST API
 
 This is test of REST API with use REST-assured and Allure-report
 
