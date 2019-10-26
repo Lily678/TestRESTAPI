@@ -14,25 +14,25 @@ public class AlfaTest {
     private static final String USER_NAME = "task-ibatulina-api";
     private static final String PASSWORD = "260719";
 
-//    @Test
-//    public void startReverseOrder(){
-//        String orderID = createOrder();
-//        payOrder(orderID);
-//        reverseOrder(orderID);
-//    }
-//    @Test
-//    public void startRefundOrder(){
-//        String orderID = createOrder();
-//        payOrder(orderID);
-//        refundOrder(orderID, AMOUNT);
-//    }
-//    @Test
-//    public void startDoubleRefundOrder(){
-//        String orderID = createOrder();
-//        payOrder(orderID);
-//        refundOrder(orderID, AMOUNT/2);
-//        refundOrder(orderID, AMOUNT/2);
-//    }
+   @Test
+   public void startReverseOrder(){
+       String orderID = createOrder();
+       payOrder(orderID);
+       reverseOrder(orderID);
+    }
+    @Test
+   public void startRefundOrder(){
+        String orderID = createOrder();
+        payOrder(orderID);
+        refundOrder(orderID, AMOUNT);
+    }
+    @Test
+    public void startDoubleRefundOrder(){
+        String orderID = createOrder();
+       payOrder(orderID);
+       refundOrder(orderID, AMOUNT/2);
+       refundOrder(orderID, AMOUNT/2);
+    }
     @Test
     public void startCreateOrder(){
         createOrder();
